@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My First Website
+        </title>
+        <style>
+            body{
+                margin: 0;
+            }
+            #Home{
+            background-image: url(https://wallpapers.com/images/hd/anime-cafe-background-1920-x-1080-ectrf4ojkdf2py5z.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 1100px;
+                
+            }
+            #AnimatedTextContainer{
+                display: inline-block;
+            }
+            .Anitext{
+                color:rgb(82, 124, 74);
+                text-shadow: 4px 3px rgb(63, 51, 29);
+                border-right: 5px solid;
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                animation:
+                typing 2s steps(18),
+                cursor .4s step-end infinite alternate;
+            }
+            @keyframes cursor{
+                50%{ border-color: transparent;}
+            }
+            @keyframes typing {
+                from { width: 0 }
+            }
+            h1{
+                
+                font-family: Times;
+                margin-left: 95px;
+                color: white;
+                font-size: 52px;
+                position: relative;
+                z-index: 1;
+                top: 200px;
+            }
+            #drop{
+                position: absolute;
+                z-index: 2;
+            }
+
+            nav{
+                border: 3px solid rgb(95, 77, 60);
+                background-color: rgb(93, 143, 63);
+                position: fixed;
+                width: 100%;
+                font-size: 20px;
+                box-shadow: 0px 7px 10px rgb(84, 124, 90);
+                
+            }
+
+            li{
+                border: 3px solid rgba(95, 77, 60, 0.76);
+                background-color: rgb(92, 112, 66);
+                padding: 10.5px;
+                width: auto;
+                float: left;
+                display: inline-block;
+            }
+
+            li a{
+                font-size:25px;
+                color: rgb(255, 255, 255);
+                text-align: relative;
+                text-decoration: none;
+                padding: 107.8px;
+                
+            }
+
+            li:hover{
+                background-color: rgb(62, 75, 50);
+            }
+            .im1{
+                position: relative;
+
+            }
+            .About p{
+                color:rgb(85, 74, 58);
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            .name {
+                margin-left: 1220px;
+                margin-top: auto;
+                float: left;
+                position: relative;
+                bottom: 450px;
+            }
+
+            #Works {
+	        padding: 2rem;
+            }
+
+            .slider-wrapper {
+	        position: relative;
+	        max-width: 60rem;
+	        margin: 0 auto;
+            border: 10px solid rgb(99, 83, 61);
+            border-radius: 20px;
+            }
+
+            .slider {
+        	display: flex;
+        	aspect-ratio: 16 / 9;
+        	overflow-x: auto;
+	        scroll-snap-type: x mandatory;
+        	scroll-behavior: smooth;
+	        box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+        	border-radius: 0.5rem;
+	        -ms-overflow-style: none;
+	        scrollbar-width: none
+            }
+
+            .slider::-webkit-scrollbar {
+	        display: none;
+            }
+
+            .slider img {
+            flex: 1 0 100%;
+	        scroll-snap-align: start;
+        	object-fit:contain;
+            }
+
+            .slider-nav {
+    	    display: flex;
+	        column-gap: 1rem;
+	        position: absolute;
+	        bottom: 1.25rem;
+	        left: 50%;
+	        transform: translateX(-50%);
+	        z-index: 1;
+            }
+
+            .slider-nav a {
+	        width: 1.3rem;
+	        height: 1.3rem;
+	        border-radius: 50%;
+	        background-color: #789cdf;
+	        opacity: 0.75;
+	        transition: opacity ease 250ms;
+            }
+
+            .slider-nav a:hover {
+	        opacity: 1;
+            }
+
+            .con1{
+                background-color: rgb(76, 136, 116);
+                width: 40%;
+                border-radius: 20px;
+                border: 2px solid rgb(57, 63, 75);
+            }
+            .con2{
+                background-color: rgb(236, 183, 69);
+                width: 40%;
+                border-radius: 20px;
+                border: 2px solid rgb(57, 63, 75);
+            }
+            .con3{
+                background-color: rgb(77, 165, 99);
+                width: 75%;
+                border-radius: 20px;
+                border: 2px solid rgb(57, 63, 75);
+            }
+            .con4{
+                background-color: rgb(105, 68, 109);
+                width: 99%;
+                border-radius: 20px;
+                border: 2px solid rgb(57, 63, 75);
+            }
+
+
+
+
+            </style>
+    </head>
+
+    <body>
+        <div id="drop">
+        <nav class="drop">
+            <li class="drop1"><a href="#Home">Home</a></li>
+            <li class="drop1"><a href="#About">About</a></li>
+            <li class="drop1"><a href="#Skills">Skills</a></li>
+            <li class="drop1"><a href="#Experience">Experience</a></li>
+            <li class="drop1"><a href="#Works">Works</a></li>
+            <li class="drop1"><a href="#Contacts">Contacts</a></li>
+        </nav>
+        </div>
+
+        <section id="Home">
+
+        <div id="AnimatedTextContainer">
+         <h1 class="Anitext">Hellow!<span style="font-size: 70px; margin-left:25px;">I'm Ken</span></h1>
+        </div>
+        </section>
+
+        <section style="outline: 20px solid rgb(245, 231, 211);" id="About">
+            <div id="About" style="background-color: rgb(245, 231, 211); margin-top: -21px;">
+                <p style="font-size: 28px; margin-left: 1160px;position: relative;top: 100px;">This is me and my everything, those who give me Inspiration and Motivation</p>
+                <img class="im1" style="margin-left: 40px;;" src="e:\Visual Studio Coding\Ken's Codings\Website Project PT\better collageeee.png" width="1100px">
+                <p style="margin-left: 1220px; position: relative;bottom: 500px;right: 40px;font-size: 23px;">Hello, I'm Ken, a begginer artist and coder whose dedicated to learn more and improve my skills not only as a coder but also a designer.</p>
+                <p style="margin-left: 1220px; position: relative;bottom: 500px;right: 40px;font-size: 23px;">This picture is my family, they are the one's who give me motivation, strength, and courage to test out new things and learn to improve as a better person.</p>
+                <p style="margin-left: 1220px; position: relative;bottom: 500px;right: 40px;font-size: 23px;">I may be just a starting begginer at website developing but I promise that I will do my best and will do my everything to my power to learn and do my best to produce the things that I can be proud of.  <br> crush ko si heart</p>
+                <p></p>
+        </div>
+
+        </section>
+
+        <section style="background-color: rgb(194, 174, 137, 0.7);" id="Skills">
+            <img style="z-index: -1;position: absolute;right: 0px;" src="https://plus.unsplash.com/premium_photo-1725519169515-e421443fdd5f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFzaWMlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww" width="1900px" height="1400px">
+            <div style="z-index: 2; margin-top: -21px;">
+            <h2 style="position: absolute; left: 730px;font-size: 40px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: rgb(109, 93, 82);">My Skills And Competencies</h2>
+            <h2 style="margin-right: 99%;color: rgb(192, 237, 240);text-shadow: 1px 2px 3px rgb(99, 109, 124);font-size: 50px;">HTML<span>Mastery</span></h2>
+            <div class="con1">
+                <h3 style="text-align: center;font-size: 30px;color: white;">40%</h3>
+            </div>
+            <br>
+            <br>
+            <h2 style="margin-right: 99%;color: rgb(247, 243, 177);text-shadow: 1px 2px 3px rgb(202, 168, 123);font-size: 50px;">CSS<span>Mastery</span></h2>
+            <div class="con2">
+                <h3 style="text-align: center;font-size: 30px;color: white">40%</h3>
+            </div>
+            <br>
+            <br>
+
+            <h2 style="margin-right: 99%;color: rgb(145, 236, 206);text-shadow: 1px 2px 3px rgb(76, 110, 89);font-size: 50px;">Graphic<span>Design</span><span>Mastery</span></h2>
+            <div class="con3">
+                <h3 style="text-align: center;font-size: 30px;color: white">75%</h3>
+            </div>
+        </section>
+
+        <section id="Experience">
+        <img style="position: absolute;z-index: -1;" src="https://plus.unsplash.com/premium_photo-1725519169515-e421443fdd5f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFzaWMlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww" width="1892px">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+            <h2 style="text-align: center;font-size: 65px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(110, 143, 172);text-shadow: 4px 3px rgb(62, 62, 99);">Experience and Education</h2>
+            <br><br><br>
+        <div style="background-color: rgb(92, 107, 141);border: 20px ridge rgb(167, 130, 106); height: 550px; width: 600px;margin-left: 50px;">
+            <h3 style="font-size: 35px;font-family:monospace; color: rgb(255, 255, 255);">Queens Row Elementary School</h3>
+            <p style="font-size: 25px;font-family:monospace; color: rgb(255, 255, 255);">I finished my elementary period on Queens Row Elementary School  and then headed onto my High School</p>
+            <img style="position:relative;left: 50px;top: 80px;" src="https://tse1.mm.bing.net/th/id/OIP.dZzLzKJQXlbUm981qWV1HAHaDe?pid=Api&P=0&h=220" width="500px">
+        </div>
+
+        <div style="background-color: rgb(92, 107, 141);border: 20px ridge rgb(167, 130, 106); height: 550px; width: 600px;margin-left: 1000px;margin-top: -400px;">
+            <h3 style="font-size: 35px;font-family:monospace; color: rgb(255, 255, 255);">Camella Bacoor National High School</h3>
+            <p style="font-size: 25px;font-family:monospace; color: rgb(255, 255, 255);">I finished my HighSchool period on Camella Bacoor National High School as a honor student and eventually headed onto San Nicolas 3 as my Senior High School</p>
+            <img style="position:relative;left: 95px;top: 20px;" src="https://i.ytimg.com/vi/_9diEnqstdE/maxresdefault.jpg" width="400px">
+        </div>
+        </section>
+
+        <section id="Works" style="background-color: rgb(170, 154, 132, 0.7);">
+            <img style="z-index: -1; position: absolute;margin-left: -30px;" src="https://plus.unsplash.com/premium_photo-1725519169515-e421443fdd5f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFzaWMlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww" width="2100px" height="800px">
+            <h1 style="color: rgb(224, 187, 154);font-size: 60px; text-shadow: 3px 3px rgb(87, 64, 48);">My<br>Learning<br>Assessments</h1>
+	<div class="slider-wrapper" style="margin-top: -125px;">
+		<div class="slider">
+			<img id="slide-1" src="e:\Visual Studio Coding\Ken's Codings\Website Project PT\New imagesasas\LAS01TOTAL.PNG" width="100px" alt="Learning Assessment 1" />
+			<img id="slide-2" src="e:\Visual Studio Coding\Ken's Codings\Website Project PT\New imagesasas\LAS02TOTALPNG.PNG" alt="Learning Assessment 2" />
+			<img id="slide-3" src="e:\Visual Studio Coding\Ken's Codings\Website Project PT\New imagesasas\LAS03TOTAL.PNG" alt="Learning Assessment 3" />
+            <img id="slide-4" src="e:\Visual Studio Coding\Ken's Codings\Website Project PT\New imagesasas\LAS04TOTAL.PNG" alt="Learning Assessment 4" />
+		</div>
+		<div class="slider-nav">
+			<a href="#slide-1"></a>
+			<a href="#slide-2"></a>
+			<a href="#slide-3"></a>
+            <a href="#slide-4"></a>
+		</div>
+	</div>
+    <div>
+        <img style="z-index: -1; position: absolute;margin-left: -30px;" src="https://plus.unsplash.com/premium_photo-1725519169515-e421443fdd5f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFzaWMlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww" width="2100px" height="800px">
+        <h1 style="color: rgb(224, 187, 154);font-size: 60px; text-shadow: 3px 3px rgb(87, 64, 48);">My<br>Performance<br>Tasks</h1>
+        <div style="margin-top: 200px;">
+            <h2 style="color: rgb(154, 210, 224);font-size: 40px; text-shadow: 3px 3px rgb(87, 64, 48);">Performance Task 1</h2>
+            <img style="border: 20px ridge rgb(167, 130, 106)" src="e:\Visual Studio Coding\Ken's Codings\Website Project PT\New imagesasas\1stptimg.jpg" width="900px">
+            <h2 style="color: rgb(154, 210, 224);font-size: 40px; text-shadow: 3px 3px rgb(87, 64, 48);">Performance Task 2</h2>
+            <img style="border: 20px ridge rgb(212, 207, 132); margin-left: 100px;" src="e:\Visual Studio Coding\Ken's Codings\Website Project PT\New imagesasas\AUTOMATIC B (TP).PNG" width="900px">
+            <img style="border: 20px ridge rgb(212, 207, 132); margin-left: 100px;" src="e:\Visual Studio Coding\Ken's Codings\Website Project PT\New imagesasas\CONCATENATION B (TP) .png" width="900px">
+            <img style="border: 20px ridge rgb(212, 207, 132); margin-left: 100px;" src="e:\Visual Studio Coding\Ken's Codings\Website Project PT\New imagesasas\PT2 FINAL TOTAL AND PALOMA.PNG" width="900px">
+            <h2 style="color: rgb(154, 210, 224);font-size: 40px; text-shadow: 3px 3px rgb(87, 64, 48);">Performance Task 3</h2>
+            <img style="border: 20px ridge rgb(167, 130, 106)" src="e:\Visual Studio Coding\Ken's Codings\Website Project PT\New imagesasas\PT3 TOTAL.PNG" width="900px">
+            <h2 style="color: rgb(154, 210, 224);font-size: 40px; text-shadow: 3px 3px rgb(87, 64, 48);">Performance Task 4</h2>
+            <img style="border: 20px ridge rgb(212, 207, 132); margin-left: 100px;" src="e:\Visual Studio Coding\Ken's Codings\Website Project PT\New imagesasas\PT4TOTALPALOMAARRAYS.PNG" width="900px">
+            <h2 style="color: rgb(154, 210, 224);font-size: 40px; text-shadow: 3px 3px rgb(87, 64, 48);">Performance Task 5</h2>
+            <img style="border: 20px ridge rgb(167, 130, 106)" src="e:\Visual Studio Coding\Ken's Codings\Website Project PT\New imagesasas\PT5PALOMATOTALCS.png" width="900px">
+            <h2 style="color: rgb(154, 210, 224);font-size: 40px; text-shadow: 3px 3px rgb(87, 64, 48);">Performance Task 6</h2>
+            <img style="border: 20px ridge rgb(212, 207, 132); margin-left: 100px;" src="e:\Visual Studio Coding\Ken's Codings\Website Project PT\New imagesasas\PT6TOTALLO.png" width="900px">
+            <h2 style="color: rgb(154, 210, 224);font-size: 40px; text-shadow: 3px 3px rgb(87, 64, 48);">Performance Task 7</h2>
+            <img style="border: 20px ridge rgb(167, 130, 106)" src="e:\Visual Studio Coding\Ken's Codings\Website Project PT\New imagesasas\PT7TOTALSWITCH1.png" width="900px">
+            <img style="border: 20px ridge rgb(167, 130, 106)" src="e:\Visual Studio Coding\Ken's Codings\Website Project PT\New imagesasas\PT7TOTALSWITCH1.1.png" width="900px">
+            <h2 style="color: rgb(154, 210, 224);font-size: 40px; text-shadow: 3px 3px rgb(87, 64, 48);">Performance Task 8</h2>
+            <img style="border: 20px ridge rgb(212, 207, 132); margin-left: 100px;" src="e:\Visual Studio Coding\Ken's Codings\Website Project PT\New imagesasas\PT8TOTALWDW.PNG" width="900px">
+            <h2 style="color: rgb(154, 210, 224);font-size: 40px; text-shadow: 3px 3px rgb(87, 64, 48);">Performance Task 9</h2>
+            <img style="border: 20px ridge rgb(167, 130, 106)" src="e:\Visual Studio Coding\Ken's Codings\Website Project PT\New imagesasas\PT10TOTALLOOP.PNG" width="900px">
+        </div> 
+    </div>
+</section>
+<section id="Contacts">
+    <img style="z-index: -1; position: absolute;" src="https://images2.alphacoders.com/641/641426.png" width="1900px" height="900px">
+    <div style="position: relative;">
+        <br>
+        <br>
+        <br>
+        <p style="color: rgb(255, 255, 255);font-size: 30px; margin-top: 320px;">If you are interested in my work <br>and want to talk with me you can contact this address:</p>
+        <div style="background-color: rgba(99, 109, 96, 0.781); border: 4px solid rgb(73, 70, 70);border-radius: 10px; margin-top: 80px;">
+        <p style="font-size: 30px;text-decoration: none;color: antiquewhite;font-family: monospace;">Email Address:<span><a style="color: antiquewhite;" href="https://mail.google.com/mail/u/0/#sent?compose=GTvVlcSHxwTMHrjSSwrPrKzJPtCqGqJhghdtZPFGPSlDDkcZWtxlwWZgmdgwMGSXDwDctlrFwkCJK" target="_blank">Kentotal984@gmail.com</a></span></p>
+        </div>
+    </div>
+</section>
+    </body>
+
+    <script>
+        alert("Welcome To The Website of Ken B. Total From ICT-11C")
+    </script>
+
+
+</html>
